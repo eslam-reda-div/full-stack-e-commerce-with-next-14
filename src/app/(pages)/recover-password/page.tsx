@@ -17,9 +17,9 @@ export default async function RecoverPassword() {
         <Link href="/">
           <Image
             src="/logo-black.svg"
+            alt="logo"
             width={250}
             height={23}
-            alt={'logo'}
             className={classes.logo}
           />
         </Link>
@@ -30,14 +30,12 @@ export default async function RecoverPassword() {
           <RenderParams className={classes.params} />
 
           <Link href="/login" className={classes.backLink}>
-            <Image src={'/assets/icons/arrow-left.svg'} alt={'back'} width={24} height={24} />
+            <Image src="/assets/icons/arrow-left.svg" alt="left arrow" width={24} height={24} />
             <p>Back</p>
           </Link>
-
           <div className={classes.formTitle}>
             <h3>Forgot Password</h3>
           </div>
-
           <RecoverPasswordForm />
         </div>
       </div>

@@ -175,7 +175,7 @@ export interface Media {
 export interface Category {
   id: string;
   title: string;
-  media: string | Media;
+  media?: string | Media;
   parent?: string | Category;
   breadcrumbs?: {
     doc?: string | Category;
@@ -476,7 +476,6 @@ export interface Settings {
 }
 export interface Header {
   id: string;
-  logo: string | Media;
   navItems?: {
     link: {
       type?: 'reference' | 'custom';
@@ -497,7 +496,6 @@ export interface Header {
 export interface Footer {
   id: string;
   copyright: string;
-  logo: string | Media;
   navItems?: {
     link: {
       type?: 'reference' | 'custom';

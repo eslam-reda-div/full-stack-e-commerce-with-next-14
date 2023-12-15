@@ -3,9 +3,9 @@
 .actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(var(--base) / 2);
-  justify-content: space-between;
 
   @include mid-break {
     flex-direction: column;
@@ -24,10 +24,10 @@
   > * {
     margin: 0;
   }
-  
+
   @include small-break {
-    grid-template-columns: 1fr;
-    font-size: 16px;
+    grid-template-colums: 1fr;
+    font-size: 16p;
   }
 }
 

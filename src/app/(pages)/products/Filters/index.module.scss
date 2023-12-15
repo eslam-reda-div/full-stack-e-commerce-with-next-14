@@ -10,7 +10,7 @@
     flex-direction: row;
     gap: 40px;
   }
-
+  
   @include small-break {
     flex-direction: column;
     gap: 20px;
@@ -61,25 +61,3 @@
   margin: 20px 0;
 }
 
-.accordion {
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}

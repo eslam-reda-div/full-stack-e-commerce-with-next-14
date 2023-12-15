@@ -25,32 +25,11 @@ const Filters = ({ categories }: { categories: Category[] }) => {
 
   const handleSort = (value: string) => setSort(value)
 
-  function handelPanel() {
-    const panel = document.querySelector(`.${classes.accordion}`)
-    if (panel) {
-      panel.classList.toggle(classes.active)
-
-      const panel2 = panel.nextElementSibling as HTMLElement
-      if (panel2.style.maxHeight) {
-        panel2.style.maxHeight = null
-      } else {
-        panel2.style.maxHeight = '100%'
-      }
-    }
-  }
-
   return (
     <div className={classes.filters}>
       <div>
-        <h6
-          className={[classes.title, classes.accordion].join(' ')}
-          onClick={() => {
-            handelPanel()
-          }}
-        >
-          Product Categories
-        </h6>
-        <div className={[classes.categories, classes.panel].join(' ')}>
+        <h6 className={classes.title}>Product Categories</h6>
+        <div className={classes.categories}>
           {categories.map(category => {
             const isSelected = categoryFilters.includes(category.id)
 

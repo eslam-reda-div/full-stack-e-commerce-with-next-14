@@ -5,9 +5,6 @@ export const HEADER = `
     navItems {
       link ${LINK_FIELDS({ disableAppearance: true })}
 		}
-    logo {
-      url
-    }
   }
 `
 
@@ -20,9 +17,6 @@ query Header {
 export const FOOTER = `
   Footer {
     copyright
-    logo {
-      url
-    }
     navItems {
       link ${LINK_FIELDS({ disableAppearance: true })}
 		}
