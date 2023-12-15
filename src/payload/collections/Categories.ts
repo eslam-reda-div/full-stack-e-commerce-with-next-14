@@ -12,6 +12,15 @@ const Categories: CollectionConfig = {
     {
       name: 'title',
       type: 'text',
+      label: 'Title',
+      required: true,
+    },
+    {
+      name: 'media',
+      type: 'upload',
+      relationTo: 'media',
+      label: 'Media',
+      required: true,
     },
   ],
 }
