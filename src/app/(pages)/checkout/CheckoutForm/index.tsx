@@ -1,11 +1,19 @@
 'use client'
 
 import React, { useCallback } from 'react'
-import { PaymentElement, useElements, useStripe } from '@stripe/react-stripe-js'
+import { RegisterOptions, UseFormRegisterReturn } from 'react-hook-form'
+import {
+  AddressElement,
+  Elements,
+  PaymentElement,
+  useElements,
+  useStripe,
+} from '@stripe/react-stripe-js'
 import { useRouter } from 'next/navigation'
 
 import { Order } from '../../../../payload/payload-types'
 import { Button } from '../../../_components/Button'
+import { Input } from '../../../_components/Input'
 import { Message } from '../../../_components/Message'
 import { priceFromJSON } from '../../../_components/Price'
 import { useCart } from '../../../_providers/Cart'
@@ -19,6 +27,7 @@ export const CheckoutForm: React.FC<{}> = () => {
   const [isLoading, setIsLoading] = React.useState(false)
   const router = useRouter()
   const { cart, cartTotal } = useCart()
+  const [address, setAddress] = React.useState('test')
 
   const handleSubmit = useCallback(
     async e => {
@@ -53,6 +62,7 @@ export const CheckoutForm: React.FC<{}> = () => {
               },
               body: JSON.stringify({
                 total: cartTotal.raw,
+                address: address,
                 stripePaymentIntentID: paymentIntent.id,
                 items: (cart?.items || [])?.map(({ product, quantity }) => ({
                   product: typeof product === 'string' ? product : product.id,
@@ -92,13 +102,27 @@ export const CheckoutForm: React.FC<{}> = () => {
         setIsLoading(false)
       }
     },
-    [stripe, elements, router, cart, cartTotal],
+    [stripe, elements, cartTotal.raw, address, cart?.items, router],
   )
 
   return (
     <form onSubmit={handleSubmit} className={classes.form}>
       {error && <Message error={error} />}
       <PaymentElement />
+      <AddressElement
+        options={{
+          mode: 'shipping',
+          allowedCountries: ['ُEG'],
+          fields: {
+            phone: 'always',
+            // address: 'always',
+          },
+        }}
+        onChange={e => {
+          setAddress(e.value.address.line1)
+          console.log(address)
+        }}
+      />
       <div className={classes.actions}>
         <Button label="Back to cart" href="/cart" appearance="secondary" />
         <Button

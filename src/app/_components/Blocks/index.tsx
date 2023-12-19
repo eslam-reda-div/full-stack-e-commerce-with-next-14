@@ -21,8 +21,9 @@ const blockComponents = {
 export const Blocks: React.FC<{
   blocks: (Page['layout'][0] | RelatedProductsProps)[]
   disableTopPadding?: boolean
+  limit?: number // Add the 'limit' prop
 }> = props => {
-  const { disableTopPadding, blocks } = props
+  const { disableTopPadding, blocks, limit } = props // Destructure the 'limit' prop
 
   const hasBlocks = blocks && Array.isArray(blocks) && blocks.length > 0
 

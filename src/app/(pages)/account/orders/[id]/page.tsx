@@ -53,6 +53,7 @@ export default async function Order({ params: { id } }) {
         <p>{`ID: ${order.id}`}</p>
         <p>{`Payment Intent: ${order.stripePaymentIntentID}`}</p>
         <p>{`Ordered On: ${formatDateTime(order.createdAt)}`}</p>
+        <p>{`Shipping Address: ${order.address}`}</p>
         <p className={classes.total}>
           {'Total: '}
           {new Intl.NumberFormat('en-US', {

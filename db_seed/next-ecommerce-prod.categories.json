@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "657975566dd263204a6f2d0d"
+  },
+  "title": "Watches",
+  "media": "657975506dd263204a6f2d05",
+  "breadcrumbs": [
+    {
+      "doc": "657975566dd263204a6f2d0d",
+      "label": "Watches",
+      "id": "657979c4d7fe8d62c4f03b64"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-12-13T09:11:50.989Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T09:30:44.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657975846dd263204a6f2d38"
+  },
+  "title": "Laptops",
+  "media": "6579757d6dd263204a6f2d30",
+  "breadcrumbs": [
+    {
+      "doc": "657975846dd263204a6f2d38",
+      "label": "Laptops",
+      "id": "657979bbd7fe8d62c4f03b63"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-12-13T09:12:36.332Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T09:30:35.352Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657979b0f60012020f36d5a3"
+  },
+  "title": "Phones",
+  "media": "657979a8f60012020f36d59b",
+  "breadcrumbs": [
+    {
+      "doc": "657979b0f60012020f36d5a3",
+      "label": "Phones",
+      "id": "657979b0d7fe8d62c4f03b62"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-12-13T09:30:24.073Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T09:30:24.521Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657979e3f60012020f36d5e4"
+  },
+  "title": "T . V",
+  "media": "657979d6f60012020f36d5dc",
+  "breadcrumbs": [
+    {
+      "doc": "657979e3f60012020f36d5e4",
+      "label": "T . V",
+      "id": "657979e3d7fe8d62c4f03b66"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-12-13T09:31:15.222Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T09:31:15.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65797a00f60012020f36d602"
+  },
+  "title": "Ipads",
+  "media": "657979f1f60012020f36d5fb",
+  "breadcrumbs": [
+    {
+      "doc": "65797a00f60012020f36d602",
+      "label": "Ipads",
+      "id": "65797a00d7fe8d62c4f03b68"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-12-13T09:31:44.157Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T09:31:44.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65797a16f60012020f36d621"
+  },
+  "title": "Accessories",
+  "media": "65797a0ef60012020f36d619",
+  "breadcrumbs": [
+    {
+      "doc": "65797a16f60012020f36d621",
+      "label": "Accessories",
+      "id": "65797a16d7fe8d62c4f03b6a"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-12-13T09:32:06.451Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T09:32:06.885Z"
+  },
+  "__v": 0
+}]

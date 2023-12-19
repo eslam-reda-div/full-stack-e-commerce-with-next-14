@@ -23,6 +23,13 @@ export const FOOTER = `
     logo {
       url
     }
+    footerNavItems {
+      title
+      description
+      logo {
+        url
+      }
+    }
     navItems {
       link ${LINK_FIELDS({ disableAppearance: true })}
 		}
@@ -37,6 +44,20 @@ query Footer {
 
 export const SETTINGS = `
   Settings {
+    promotionContent
+    date
+    loginImage{
+      url
+    }
+    SignUpImage{
+      url
+    }
+    recoverPasswordImage{
+      url
+    }
+    paner{
+      url
+    }
     productsPage {
       slug
     }

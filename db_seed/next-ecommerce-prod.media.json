@@ -1,0 +1,462 @@
+[{
+  "_id": {
+    "$oid": "6577241fbff35ceeee2af773"
+  },
+  "alt": "facebook",
+  "filename": "facebook-2.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 226,
+  "width": 24,
+  "height": 24,
+  "createdAt": {
+    "$date": "2023-12-11T15:00:47.642Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:23:48.025Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/facebook-1.svg"
+},
+{
+  "_id": {
+    "$oid": "65772433bff35ceeee2af77b"
+  },
+  "alt": "instagram",
+  "filename": "instagram-2.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 297,
+  "width": 24,
+  "height": 24,
+  "createdAt": {
+    "$date": "2023-12-11T15:01:07.394Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:23:34.182Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/instagram-1.svg"
+},
+{
+  "_id": {
+    "$oid": "65772447bff35ceeee2af783"
+  },
+  "alt": "twitter",
+  "filename": "twitter-2.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 720,
+  "width": 24,
+  "height": 24,
+  "createdAt": {
+    "$date": "2023-12-11T15:01:27.627Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:21:52.483Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/twitter-1.svg"
+},
+{
+  "_id": {
+    "$oid": "65796a88585dec78534c446f"
+  },
+  "alt": "hero 1",
+  "filename": "hero-2.png",
+  "mimeType": "image/png",
+  "filesize": 547366,
+  "width": 1499,
+  "height": 704,
+  "createdAt": {
+    "$date": "2023-12-13T08:25:44.896Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T08:31:40.015Z"
+  },
+  "__v": 0,
+  "url": "https://full-stack-e-commerce-with-next-14.payloadcms.app/media/hero-1.png"
+},
+{
+  "_id": {
+    "$oid": "657975506dd263204a6f2d05"
+  },
+  "alt": "watches-category",
+  "filename": "watches-category-2.png",
+  "mimeType": "image/png",
+  "filesize": 98736,
+  "width": 620,
+  "height": 720,
+  "createdAt": {
+    "$date": "2023-12-13T09:11:44.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:21:31.374Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/watches-category-1.png"
+},
+{
+  "_id": {
+    "$oid": "6579757d6dd263204a6f2d30"
+  },
+  "alt": "laptops-category",
+  "filename": "laptops-category-2.png",
+  "mimeType": "image/png",
+  "filesize": 160880,
+  "width": 620,
+  "height": 720,
+  "createdAt": {
+    "$date": "2023-12-13T09:12:29.622Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:21:18.958Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/laptops-category-1.png"
+},
+{
+  "_id": {
+    "$oid": "657979a8f60012020f36d59b"
+  },
+  "alt": "phones",
+  "filename": "phones-category-2.png",
+  "mimeType": "image/png",
+  "filesize": 44293,
+  "width": 620,
+  "height": 720,
+  "createdAt": {
+    "$date": "2023-12-13T09:30:16.728Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:21:07.813Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/phones-category-1.png"
+},
+{
+  "_id": {
+    "$oid": "657979d6f60012020f36d5dc"
+  },
+  "alt": "tv",
+  "filename": "tv-home-category-2.png",
+  "mimeType": "image/png",
+  "filesize": 29374,
+  "width": 620,
+  "height": 720,
+  "createdAt": {
+    "$date": "2023-12-13T09:31:02.761Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:20:57.605Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/tv-home-category-1.png"
+},
+{
+  "_id": {
+    "$oid": "657979f1f60012020f36d5fb"
+  },
+  "alt": "ipads",
+  "filename": "ipads-category-2.png",
+  "mimeType": "image/png",
+  "filesize": 30200,
+  "width": 620,
+  "height": 720,
+  "createdAt": {
+    "$date": "2023-12-13T09:31:29.410Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:20:31.539Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/ipads-category-1.png"
+},
+{
+  "_id": {
+    "$oid": "65797a0ef60012020f36d619"
+  },
+  "alt": "accessories",
+  "filename": "accessories-category-2.png",
+  "mimeType": "image/png",
+  "filesize": 86859,
+  "width": 620,
+  "height": 720,
+  "createdAt": {
+    "$date": "2023-12-13T09:31:58.511Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:20:11.182Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/accessories-category-1.png"
+},
+{
+  "_id": {
+    "$oid": "6579d2e7b10e995036bc9307"
+  },
+  "alt": "apple watch",
+  "filename": "apple-watch-series-9-aluminum-2.png",
+  "mimeType": "image/png",
+  "filesize": 185937,
+  "width": 930,
+  "height": 1072,
+  "createdAt": {
+    "$date": "2023-12-13T15:51:03.944Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:19:54.774Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/apple-watch-series-9-aluminum-1.png"
+},
+{
+  "_id": {
+    "$oid": "6579d470b10e995036bc94a7"
+  },
+  "alt": "apple iphon",
+  "filename": "apple-iphone-15-pro-1tb-blue-titanium-2.png",
+  "mimeType": "image/png",
+  "filesize": 368479,
+  "width": 852,
+  "height": 986,
+  "createdAt": {
+    "$date": "2023-12-13T15:57:36.109Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:19:40.376Z"
+  },
+  "__v": 0,
+  "url": "http://localhost:3000/media/apple-iphone-15-pro-1tb-blue-titanium-2.png"
+},
+{
+  "_id": {
+    "$oid": "657c353b680ad7d9d69e9a5d"
+  },
+  "alt": "logo",
+  "filename": "logo-black-3.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 3785,
+  "width": 180,
+  "height": 30,
+  "createdAt": {
+    "$date": "2023-12-15T11:15:07.206Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:15:07.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c354d680ad7d9d69e9ae5"
+  },
+  "alt": "logo",
+  "filename": "logo-white-3.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 3757,
+  "width": 180,
+  "height": 30,
+  "createdAt": {
+    "$date": "2023-12-15T11:15:25.319Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:15:25.319Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c35de680ad7d9d69e9f77"
+  },
+  "alt": "hero",
+  "filename": "hero-5.png",
+  "mimeType": "image/png",
+  "filesize": 399669,
+  "width": 1499,
+  "height": 704,
+  "createdAt": {
+    "$date": "2023-12-15T11:17:50.918Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:17:50.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c3a5fe9198e1236e64e9d"
+  },
+  "alt": "shipping",
+  "filename": "shipping.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 913,
+  "width": 36,
+  "height": 36,
+  "createdAt": {
+    "$date": "2023-12-15T11:37:03.211Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:37:03.211Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c3a88e9198e1236e64ea5"
+  },
+  "alt": "dollar",
+  "filename": "dollar.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 791,
+  "width": 37,
+  "height": 36,
+  "createdAt": {
+    "$date": "2023-12-15T11:37:44.737Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:37:44.737Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c3aaee9198e1236e64ead"
+  },
+  "alt": "support",
+  "filename": "support.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 649,
+  "width": 37,
+  "height": 36,
+  "createdAt": {
+    "$date": "2023-12-15T11:38:22.863Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:38:22.863Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c3ad0e9198e1236e64eb5"
+  },
+  "alt": "payment",
+  "filename": "payment.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 413,
+  "width": 36,
+  "height": 36,
+  "createdAt": {
+    "$date": "2023-12-15T11:38:56.871Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:38:56.871Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c4f3e32d91bf676b24654"
+  },
+  "alt": "paner",
+  "filename": "image-4.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 378635,
+  "width": 1080,
+  "height": 1080,
+  "createdAt": {
+    "$date": "2023-12-15T13:06:06.631Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T13:06:06.631Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657dbe02017851db40c77583"
+  },
+  "alt": "airpods",
+  "filename": "airpods-max-1.png",
+  "mimeType": "image/png",
+  "filesize": 210717,
+  "width": 1058,
+  "height": 1110,
+  "createdAt": {
+    "$date": "2023-12-16T15:10:58.690Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T15:10:58.690Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657dbf3d017851db40c77756"
+  },
+  "alt": "14-inch-macbook-pro-12-core-1tb-space-black",
+  "filename": "14-inch-macbook-pro-12-core-1tb-space-black.png",
+  "mimeType": "image/png",
+  "filesize": 240048,
+  "width": 1914,
+  "height": 1148,
+  "createdAt": {
+    "$date": "2023-12-16T15:16:13.799Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T15:16:13.799Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657dca53ac90d318c48cd721"
+  },
+  "alt": "hero",
+  "filename": "image-1.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 5335338,
+  "width": 845,
+  "height": 1024,
+  "createdAt": {
+    "$date": "2023-12-16T16:03:31.956Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T16:03:31.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657dca5eac90d318c48cd729"
+  },
+  "alt": "hero",
+  "filename": "image-2.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 3366649,
+  "width": 845,
+  "height": 1024,
+  "createdAt": {
+    "$date": "2023-12-16T16:03:42.951Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T16:03:42.951Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657dca69ac90d318c48cd732"
+  },
+  "alt": "hero",
+  "filename": "image-3.svg",
+  "mimeType": "image/svg+xml",
+  "filesize": 4578684,
+  "width": 845,
+  "height": 1024,
+  "createdAt": {
+    "$date": "2023-12-16T16:03:53.015Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T16:03:53.015Z"
+  },
+  "__v": 0
+}]

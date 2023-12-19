@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "6576ed0deaafdf6d42c81dc2"
+  },
+  "navItems": [
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "value": "6576ed1aeaafdf6d42c81e3c",
+          "relationTo": "pages"
+        },
+        "label": "Home"
+      },
+      "id": "65770de3a6e1eddd37c7990d"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "value": "6576ed19eaafdf6d42c81e2e",
+          "relationTo": "pages"
+        },
+        "label": "Shop"
+      },
+      "id": "6576ed1f28301150e046b82a"
+    }
+  ],
+  "globalType": "header",
+  "createdAt": {
+    "$date": "2023-12-11T11:05:49.742Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T16:42:14.580Z"
+  },
+  "__v": 0,
+  "logo": "657c353b680ad7d9d69e9a5d"
+},
+{
+  "_id": {
+    "$oid": "6576ed0deaafdf6d42c81dc5"
+  },
+  "globalType": "settings",
+  "createdAt": {
+    "$date": "2023-12-11T11:05:49.749Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-16T16:34:30.854Z"
+  },
+  "__v": 0,
+  "productsPage": "6576ed19eaafdf6d42c81e2e",
+  "paner": "657c4f3e32d91bf676b24654",
+  "promotionContent": "Get ready for a shopping experience like never before with our Deals of the Month! Every purchase comes with exclusive perks and offers, making this month a celebration of savvy choices and amazing deals. Don't miss out! 🎁🛒",
+  "date": {
+    "$date": "2023-12-22T00:00:00.000Z"
+  },
+  "SignUpImage": "657dca5eac90d318c48cd729",
+  "loginImage": "657dca53ac90d318c48cd721",
+  "recoverPasswordImage": "657dca69ac90d318c48cd732"
+},
+{
+  "_id": {
+    "$oid": "6576ed0deaafdf6d42c81dc7"
+  },
+  "navItems": [
+    {
+      "link": {
+        "type": "custom",
+        "newTab": true,
+        "url": "https://facebook.com",
+        "label": "facebook",
+        "icon": "6577241fbff35ceeee2af773"
+      },
+      "id": "65771d9a0f489e2496434030"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "newTab": true,
+        "url": "http://x.com",
+        "label": "twitter",
+        "icon": "65772447bff35ceeee2af783"
+      },
+      "id": "65771dea0f489e2496434032"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "newTab": true,
+        "url": "http://instagram.com",
+        "label": "instagram",
+        "icon": "65772433bff35ceeee2af77b"
+      },
+      "id": "65771e5e0f489e2496434033"
+    }
+  ],
+  "globalType": "footer",
+  "createdAt": {
+    "$date": "2023-12-11T11:05:49.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T13:03:47.353Z"
+  },
+  "__v": 0,
+  "copyright": "eslam reda copyright",
+  "logo": "657c354d680ad7d9d69e9ae5",
+  "footerNavItems": [
+    {
+      "title": "Free Shipping 1",
+      "description": "Free shipping for order above $150 1",
+      "logo": "657c3a5fe9198e1236e64e9d",
+      "id": "657c3b2e0c767480f22211f3"
+    },
+    {
+      "title": "Money Guarantee 2",
+      "description": "Within 30 days for an exchange 2",
+      "logo": "657c3a88e9198e1236e64ea5",
+      "id": "657c3b4f93cd007c3b99973d"
+    },
+    {
+      "title": "Online Support 3",
+      "description": "Pay with multiple credit cards 3",
+      "logo": "657c3aaee9198e1236e64ead",
+      "id": "657c3b6d93cd007c3b99973e"
+    },
+    {
+      "title": "Flexible Payment 4",
+      "description": "Pay with multiple credit cards 4",
+      "logo": "657c3ad0e9198e1236e64eb5",
+      "id": "657c3b9793cd007c3b99973f"
+    }
+  ]
+}]

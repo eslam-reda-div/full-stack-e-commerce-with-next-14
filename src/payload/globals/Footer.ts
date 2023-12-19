@@ -22,6 +22,33 @@ export const Footer: GlobalConfig = {
       required: true,
     },
     {
+      name: 'footerNavItems',
+      type: 'array',
+      label: 'Footer Blocks Items',
+      maxRows: 4,
+      fields: [
+        {
+          name: 'title',
+          type: 'text',
+          label: 'Title',
+          required: true,
+        },
+        {
+          name: 'description',
+          type: 'text',
+          label: 'Description',
+          required: true,
+        },
+        {
+          name: 'logo',
+          type: 'upload',
+          label: 'logo',
+          relationTo: 'media',
+          required: true,
+        },
+      ],
+    },
+    {
       name: 'navItems',
       type: 'array',
       maxRows: 6,

@@ -393,6 +393,7 @@ export interface Order {
   orderedBy?: string | User;
   stripePaymentIntentID?: string;
   total: number;
+  address?: string;
   items?: {
     product: string | Product;
     price?: number;
@@ -405,6 +406,7 @@ export interface Order {
 export interface User {
   id: string;
   name?: string;
+  phone?: string;
   roles?: ('admin' | 'customer')[];
   purchases?: string[] | Product[];
   stripeCustomerID?: string;
@@ -471,6 +473,12 @@ export interface PayloadMigration {
 export interface Settings {
   id: string;
   productsPage?: string | Page;
+  promotionContent: string;
+  date: string;
+  paner: string | Media;
+  loginImage: string | Media;
+  SignUpImage: string | Media;
+  recoverPasswordImage: string | Media;
   updatedAt?: string;
   createdAt?: string;
 }
@@ -498,6 +506,12 @@ export interface Footer {
   id: string;
   copyright: string;
   logo: string | Media;
+  footerNavItems?: {
+    title: string;
+    description: string;
+    logo: string | Media;
+    id?: string;
+  }[];
   navItems?: {
     link: {
       type?: 'reference' | 'custom';

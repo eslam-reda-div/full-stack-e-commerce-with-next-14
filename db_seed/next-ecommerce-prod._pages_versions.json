@@ -1,0 +1,6193 @@
+[{
+  "_id": {
+    "$oid": "6576ed19eaafdf6d42c81e30"
+  },
+  "parent": "6576ed19eaafdf6d42c81e2e",
+  "version": {
+    "title": "Products",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:01.593Z"
+    },
+    "hero": {
+      "type": "lowImpact",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "All products"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This page displays all or some of the products of your store ranging from goods and services to digital assets and gated content. Each product is complete with a dynamic page layout builder for a completely custom shopping experience that is under your full control."
+            }
+          ]
+        }
+      ],
+      "media": null
+    },
+    "layout": [
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "All products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display docs on a page. It can be auto-populated by collection, filtered by category, and much more."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1928301150e046b814",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      }
+    ],
+    "slug": "products",
+    "meta": {
+      "title": "Shop all products",
+      "description": "Shop everything from goods and services to digital assets and gated content."
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T11:06:01.599Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:01.599Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:01.599Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-11T11:06:01.599Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6576ed1beaafdf6d42c81e3e"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "highImpact",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Payload E-Commerce Store"
+            }
+          ],
+          "type": "h1"
+        },
+        {
+          "children": [
+            {
+              "text": "Welcome to your store! "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "Visit the admin dashboard"
+                }
+              ]
+            },
+            {
+              "text": " to begin managing this site's content. The code for this template is completely open-source and can be found "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+              "newTab": true,
+              "children": [
+                {
+                  "text": "here"
+                }
+              ]
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "large-body"
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "relationTo": "pages",
+              "value": "6576ed19eaafdf6d42c81e2e"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        },
+        {
+          "link": {
+            "type": "custom",
+            "newTab": true,
+            "reference": null,
+            "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+            "label": "View on GitHub",
+            "appearance": "secondary"
+          },
+          "id": "6576ed1a28301150e046b81a"
+        }
+      ],
+      "media": "6576ed0eeaafdf6d42c81dca"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6576ed1ceaafdf6d42c81e56"
+  },
+  "parent": "6576ed1ceaafdf6d42c81e54",
+  "version": {
+    "title": "Cart",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:04.671Z"
+    },
+    "hero": {
+      "type": "lowImpact",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "Cart"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This cart saves to local storage so you can continue shopping later. Once you authenticate with Payload, your cart will sync to your user profile so you can continue shopping from any device. This hero and the content below the cart are completely dynamic and "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "configured in the admin dashboard"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [],
+      "media": null
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "This is a custom layout building block configurable in the CMS—this can be anything you want. Related or suggested products, a blog post, video, etc."
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1c28301150e046b828"
+          }
+        ],
+        "id": "6576ed1c28301150e046b826",
+        "blockType": "content"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Continue shopping"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "relationTo": "pages",
+                "value": "6576ed19eaafdf6d42c81e2e"
+              },
+              "url": "",
+              "label": "Continue shopping",
+              "appearance": "primary"
+            },
+            "id": "6576ed1c28301150e046b829"
+          }
+        ],
+        "id": "6576ed1c28301150e046b827",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "cart",
+    "meta": {
+      "title": "Cart",
+      "description": "Your cart will sync to your user profile so you can continue shopping from any device."
+    },
+    "updatedAt": {
+      "$date": "2023-12-11T11:06:04.677Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:04.677Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:04.677Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-11T11:06:04.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65795c34585dec78534c3d53"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Payload E-Commerce Store"
+            }
+          ],
+          "type": "h1"
+        },
+        {
+          "children": [
+            {
+              "text": "Welcome to your store! "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "Visit the admin dashboard"
+                }
+              ]
+            },
+            {
+              "text": " to begin managing this site's content. The code for this template is completely open-source and can be found "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+              "newTab": true,
+              "children": [
+                {
+                  "text": "here"
+                }
+              ]
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "large-body"
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        },
+        {
+          "link": {
+            "type": "custom",
+            "newTab": true,
+            "reference": null,
+            "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+            "label": "View on GitHub",
+            "appearance": "secondary"
+          },
+          "id": "6576ed1a28301150e046b81a"
+        }
+      ],
+      "media": "6576ed0eeaafdf6d42c81dca"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T07:24:36.326Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T07:24:36.326Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65795cce585dec78534c3f3f"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "highImpact",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Payload E-Commerce Store"
+            }
+          ],
+          "type": "h1"
+        },
+        {
+          "children": [
+            {
+              "text": "Welcome to your store! "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "Visit the admin dashboard"
+                }
+              ]
+            },
+            {
+              "text": " to begin managing this site's content. The code for this template is completely open-source and can be found "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+              "newTab": true,
+              "children": [
+                {
+                  "text": "here"
+                }
+              ]
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "large-body"
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        },
+        {
+          "link": {
+            "type": "custom",
+            "newTab": true,
+            "reference": null,
+            "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+            "label": "View on GitHub",
+            "appearance": "secondary"
+          },
+          "id": "6576ed1a28301150e046b81a"
+        }
+      ],
+      "media": "6576ed0eeaafdf6d42c81dca"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T07:27:10.746Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T07:27:10.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65796a58585dec78534c4422"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Payload E-Commerce Store"
+            }
+          ],
+          "type": "h1"
+        },
+        {
+          "children": [
+            {
+              "text": "Welcome to your store! "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "Visit the admin dashboard"
+                }
+              ]
+            },
+            {
+              "text": " to begin managing this site's content. The code for this template is completely open-source and can be found "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+              "newTab": true,
+              "children": [
+                {
+                  "text": "here"
+                }
+              ]
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "large-body"
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        },
+        {
+          "link": {
+            "type": "custom",
+            "newTab": true,
+            "reference": null,
+            "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+            "label": "View on GitHub",
+            "appearance": "secondary"
+          },
+          "id": "6576ed1a28301150e046b81a"
+        }
+      ],
+      "media": "6576ed0eeaafdf6d42c81dca"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T08:24:55.181Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T08:24:55.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65796a94585dec78534c4479"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Payload E-Commerce Store"
+            }
+          ],
+          "type": "h1"
+        },
+        {
+          "children": [
+            {
+              "text": "Welcome to your store! "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "Visit the admin dashboard"
+                }
+              ]
+            },
+            {
+              "text": " to begin managing this site's content. The code for this template is completely open-source and can be found "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+              "newTab": true,
+              "children": [
+                {
+                  "text": "here"
+                }
+              ]
+            },
+            {
+              "text": "."
+            }
+          ],
+          "type": "large-body"
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        },
+        {
+          "link": {
+            "type": "custom",
+            "newTab": true,
+            "reference": null,
+            "url": "https://github.com/payloadcms/payload/tree/main/templates/ecommerce",
+            "label": "View on GitHub",
+            "appearance": "secondary"
+          },
+          "id": "6576ed1a28301150e046b81a"
+        }
+      ],
+      "media": "65796a88585dec78534c446f"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T08:25:55.861Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T08:25:55.861Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65796b4f585dec78534c45c0"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Unleash Innovation in every Byte."
+            }
+          ],
+          "type": "large-body"
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        }
+      ],
+      "media": "65796a88585dec78534c446f"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T08:29:03.526Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T08:29:03.526Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65796d9c585dec78534c556c"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Unleash Innovation In Every Byte."
+            }
+          ],
+          "type": "h2"
+        },
+        {
+          "children": [
+            {
+              "text": "Explore a World of Cutting Edge Tech"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        }
+      ],
+      "media": "65796a88585dec78534c446f"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T08:38:51.821Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T08:38:51.821Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65796dd2585dec78534c561f"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Unleash Innovation "
+            }
+          ],
+          "type": "h2"
+        },
+        {
+          "type": "h2",
+          "children": [
+            {
+              "text": "In Every Byte."
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "text": "Explore a World of Cutting Edge Tech"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        }
+      ],
+      "media": "65796a88585dec78534c446f"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "6576ed0eeaafdf6d42c81dca"
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T08:39:46.561Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T08:39:46.561Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6579956ef60012020f37006a"
+  },
+  "parent": "6576ed19eaafdf6d42c81e2e",
+  "version": {
+    "title": "Products",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:01.593Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "All products"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This page displays all or some of the products of your store ranging from goods and services to digital assets and gated content. Each product is complete with a dynamic page layout builder for a completely custom shopping experience that is under your full control."
+            }
+          ]
+        }
+      ],
+      "links": [],
+      "media": "65799563f60012020f370060"
+    },
+    "layout": [
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "All products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display docs on a page. It can be auto-populated by collection, filtered by category, and much more."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1928301150e046b814",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      }
+    ],
+    "slug": "products",
+    "meta": {
+      "title": "Shop all products",
+      "description": "Shop everything from goods and services to digital assets and gated content."
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T11:28:46.093Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:01.599Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:01.599Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T11:28:46.093Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6579958cf60012020f3700e1"
+  },
+  "parent": "6576ed19eaafdf6d42c81e2e",
+  "version": {
+    "title": "Products",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:01.593Z"
+    },
+    "hero": {
+      "type": "lowImpact",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "All products"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This page displays all or some of the products of your store ranging from goods and services to digital assets and gated content. Each product is complete with a dynamic page layout builder for a completely custom shopping experience that is under your full control."
+            }
+          ]
+        }
+      ],
+      "links": [],
+      "media": "65799563f60012020f370060"
+    },
+    "layout": [
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "All products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display docs on a page. It can be auto-populated by collection, filtered by category, and much more."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1928301150e046b814",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      }
+    ],
+    "slug": "products",
+    "meta": {
+      "title": "Shop all products",
+      "description": "Shop everything from goods and services to digital assets and gated content."
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T11:29:16.407Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:01.599Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:01.599Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T11:29:16.407Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65799ec5f60012020f37066b"
+  },
+  "parent": "6576ed19eaafdf6d42c81e2e",
+  "version": {
+    "title": "Products",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:01.593Z"
+    },
+    "hero": {
+      "type": "lowImpact",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "All products"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This page displays all or some of the products of your store ranging from goods and services to digital assets and gated content. Each product is complete with a dynamic page layout builder for a completely custom shopping experience that is under your full control."
+            }
+          ]
+        }
+      ],
+      "links": [],
+      "media": "65799563f60012020f370060"
+    },
+    "layout": [
+      {
+        "introContent": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 9,
+        "id": "6576ed1928301150e046b814",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      }
+    ],
+    "slug": "products",
+    "meta": {
+      "title": "Shop all products",
+      "description": "Shop everything from goods and services to digital assets and gated content."
+    },
+    "updatedAt": {
+      "$date": "2023-12-13T12:08:37.517Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:01.599Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:01.599Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-13T12:08:37.517Z"
+  },
+  "latest": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657befa5088d9dce47f9d477"
+  },
+  "parent": "6576ed1ceaafdf6d42c81e54",
+  "version": {
+    "title": "Cart",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:04.671Z"
+    },
+    "hero": {
+      "type": "lowImpact",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "Cart"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This cart saves to local storage so you can continue shopping later. Once you authenticate with Payload, your cart will sync to your user profile so you can continue shopping from any device. This hero and the content below the cart are completely dynamic and "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "configured in the admin dashboard"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [],
+      "media": null
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "es"
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1c28301150e046b828"
+          }
+        ],
+        "id": "6576ed1c28301150e046b826",
+        "blockType": "content"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Continue shopping"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Continue shopping",
+              "appearance": "primary"
+            },
+            "id": "6576ed1c28301150e046b829"
+          }
+        ],
+        "id": "6576ed1c28301150e046b827",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "cart",
+    "meta": {
+      "title": "Cart",
+      "description": "Your cart will sync to your user profile so you can continue shopping from any device."
+    },
+    "updatedAt": {
+      "$date": "2023-12-15T06:18:13.482Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:04.677Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:04.677Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T06:18:13.482Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657befb5088d9dce47f9d51d"
+  },
+  "parent": "6576ed1ceaafdf6d42c81e54",
+  "version": {
+    "title": "Cart",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:04.671Z"
+    },
+    "hero": {
+      "type": "lowImpact",
+      "richText": [
+        {
+          "type": "h1",
+          "children": [
+            {
+              "text": "Cart"
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "children": [
+            {
+              "text": "This cart saves to local storage so you can continue shopping later. Once you authenticate with Payload, your cart will sync to your user profile so you can continue shopping from any device. This hero and the content below the cart are completely dynamic and "
+            },
+            {
+              "type": "link",
+              "linkType": "custom",
+              "url": "/admin",
+              "children": [
+                {
+                  "text": "configured in the admin dashboard"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [],
+      "media": null
+    },
+    "layout": [
+      {
+        "columns": [],
+        "id": "6576ed1c28301150e046b826",
+        "blockType": "content"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Continue shopping"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Continue shopping",
+              "appearance": "primary"
+            },
+            "id": "6576ed1c28301150e046b829"
+          }
+        ],
+        "id": "6576ed1c28301150e046b827",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "cart",
+    "meta": {
+      "title": "Cart",
+      "description": "Your cart will sync to your user profile so you can continue shopping from any device."
+    },
+    "updatedAt": {
+      "$date": "2023-12-15T06:18:29.702Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:04.677Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:04.677Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T06:18:29.702Z"
+  },
+  "latest": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c0ce4c77d1ed46494fab6"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Unleash Innovation "
+            }
+          ],
+          "type": "h2"
+        },
+        {
+          "type": "h2",
+          "children": [
+            {
+              "text": "In Every Byte."
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "text": "Explore a World of Cutting Edge Tech"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        }
+      ],
+      "media": "65796a88585dec78534c446f"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "657c0cbac77d1ed46494fa76"
+    },
+    "updatedAt": {
+      "$date": "2023-12-15T08:23:00.034Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T08:23:00.034Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657c35e0680ad7d9d69e9f81"
+  },
+  "parent": "6576ed1aeaafdf6d42c81e3c",
+  "version": {
+    "title": "Home",
+    "publishedOn": {
+      "$date": "2023-12-11T11:06:02.835Z"
+    },
+    "hero": {
+      "type": "customHero",
+      "richText": [
+        {
+          "children": [
+            {
+              "text": "Unleash Innovation "
+            }
+          ],
+          "type": "h2"
+        },
+        {
+          "type": "h2",
+          "children": [
+            {
+              "text": "In Every Byte."
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "text": "Explore a World of Cutting Edge Tech"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "link": {
+            "type": "reference",
+            "reference": {
+              "value": "6576ed19eaafdf6d42c81e2e",
+              "relationTo": "pages"
+            },
+            "url": "",
+            "label": "Shop now",
+            "appearance": "primary"
+          },
+          "id": "6576ed1a28301150e046b819"
+        }
+      ],
+      "media": "657c35de680ad7d9d69e9f77"
+    },
+    "layout": [
+      {
+        "columns": [
+          {
+            "size": "full",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Core Features"
+                  }
+                ],
+                "type": "h2"
+              },
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81b"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Admin Dashboard"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Manage this site's users, pages, products, and more from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81c"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Authentication"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "User "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/login",
+                    "children": [
+                      {
+                        "text": "login"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " and "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/create-account",
+                    "children": [
+                      {
+                        "text": "create account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " flows are complete with email verification and password reset."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81d"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Customer Accounts"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Customers can "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/account",
+                    "children": [
+                      {
+                        "text": "manage their account"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/orders",
+                    "children": [
+                      {
+                        "text": "view their order history"
+                      }
+                    ]
+                  },
+                  {
+                    "text": ", and more without leaving the site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81e"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Paywall"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Easily gate digital content behind a paywall or require users to be logged in to access it."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b81f"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Shopping Cart"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Shopping carts persist between sessions, can be saved for later, and are accessible from any device."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b820"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Checkout"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Secure in-app checkout powered by Stripe means your customers never have to leave your site."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b821"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Page Builder"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Custom page builder allows you to create unique page and product layouts for any type of content."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b822"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "SEO"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Editors have complete control over SEO data and site content directly from the "
+                  },
+                  {
+                    "type": "link",
+                    "linkType": "custom",
+                    "url": "/admin",
+                    "children": [
+                      {
+                        "text": "admin dashboard"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b823"
+          },
+          {
+            "size": "oneThird",
+            "richText": [
+              {
+                "children": [
+                  {
+                    "text": "Dark Mode"
+                  }
+                ],
+                "type": "h3"
+              },
+              {
+                "children": [
+                  {
+                    "text": "Users will experience this site in their preferred color scheme, and each block can be inverted."
+                  }
+                ]
+              }
+            ],
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "reference": null,
+              "url": "",
+              "label": "",
+              "appearance": "default"
+            },
+            "id": "6576ed1a28301150e046b824"
+          }
+        ],
+        "id": "6576ed1a28301150e046b815",
+        "blockName": "Content Block",
+        "blockType": "content"
+      },
+      {
+        "position": "default",
+        "media": "6576ed0eeaafdf6d42c81dcd",
+        "id": "6576ed1a28301150e046b816",
+        "blockName": "Media Block",
+        "blockType": "mediaBlock"
+      },
+      {
+        "introContent": [
+          {
+            "type": "h4",
+            "children": [
+              {
+                "text": "Recent Products"
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "children": [
+              {
+                "text": "The products below are displayed in an \"Archive\" layout building block which is an extremely powerful way to display documents on a page. It can be auto-populated by collection or by category, or products can be individually selected. Pagination controls will automatically appear if the number of results exceeds the number of items per page."
+              }
+            ]
+          }
+        ],
+        "populateBy": "collection",
+        "relationTo": "products",
+        "categories": [],
+        "limit": 10,
+        "id": "6576ed1a28301150e046b817",
+        "blockName": "Archive Block",
+        "blockType": "archive"
+      },
+      {
+        "richText": [
+          {
+            "children": [
+              {
+                "text": "Shop now"
+              }
+            ],
+            "type": "h4"
+          },
+          {
+            "children": [
+              {
+                "text": "This is a custom layout building block "
+              },
+              {
+                "type": "link",
+                "linkType": "custom",
+                "url": "/admin",
+                "children": [
+                  {
+                    "text": "configured in the admin dashboard"
+                  }
+                ]
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "link": {
+              "type": "reference",
+              "reference": {
+                "value": "6576ed19eaafdf6d42c81e2e",
+                "relationTo": "pages"
+              },
+              "url": "",
+              "label": "Shop now",
+              "appearance": "primary"
+            },
+            "id": "6576ed1a28301150e046b825"
+          }
+        ],
+        "id": "6576ed1a28301150e046b818",
+        "blockName": "CTA",
+        "blockType": "cta"
+      }
+    ],
+    "slug": "home",
+    "meta": {
+      "title": "Payload E-Commerce Template",
+      "description": "An open-source e-commerce store built with Payload and Next.js.",
+      "image": "657c0cbac77d1ed46494fa76"
+    },
+    "updatedAt": {
+      "$date": "2023-12-15T11:17:52.839Z"
+    },
+    "createdAt": {
+      "$date": "2023-12-11T11:06:02.853Z"
+    },
+    "_status": "published"
+  },
+  "createdAt": {
+    "$date": "2023-12-11T11:06:02.853Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T11:17:52.839Z"
+  },
+  "latest": true,
+  "__v": 0
+}]

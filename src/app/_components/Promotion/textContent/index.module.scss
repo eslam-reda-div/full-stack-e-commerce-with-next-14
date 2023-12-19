@@ -1,0 +1,8 @@
+@use '../../../_css/queries.scss' as *;
+
+.image{
+  min-height: 500px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}

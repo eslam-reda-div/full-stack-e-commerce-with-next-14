@@ -1,6 +1,8 @@
 @import '../../_css/common';
 
 .recoverPassword {
+  --mytest-image: none;
+
   display: grid;
   grid-template-columns: 1fr 45%;
   height: 100vh;
@@ -11,7 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/image-3.svg');
+    background-image: var(--mytest-image);
   }
 
   p {
@@ -25,10 +27,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('/assets/images/image-3.svg');
+  // background-image: url('/assets/images/image-3.svg');
 
   @include mid-break {
-    background: none;
+    background: none !important;
     display: flex;
     justify-content: center;
   }

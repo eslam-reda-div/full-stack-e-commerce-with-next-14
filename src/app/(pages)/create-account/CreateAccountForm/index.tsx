@@ -15,6 +15,7 @@ import classes from './index.module.scss'
 type FormData = {
   name: string
   email: string
+  phone: string
   password: string
   passwordConfirm: string
 }
@@ -96,6 +97,14 @@ const CreateAccountForm: React.FC = () => {
         register={register}
         error={errors.email}
         type="email"
+      />
+      <Input
+        name="phone"
+        label="Phone number"
+        required
+        register={register}
+        error={errors.phone}
+        type="text"
       />
       <Input
         name="password"

@@ -4756,6 +4756,7 @@ type Order {
   orderedBy: User
   stripePaymentIntentID: String
   total: Float!
+  address: String
   items: [Order_Items!]
   updatedAt: DateTime
   createdAt: DateTime
@@ -4764,6 +4765,7 @@ type Order {
 type User {
   id: String
   name: String
+  phone: String
   roles: [User_roles!]
   purchases: [Product!]
   stripeCustomerID: String
@@ -4826,6 +4828,7 @@ input Order_where {
   orderedBy: Order_orderedBy_operator
   stripePaymentIntentID: Order_stripePaymentIntentID_operator
   total: Order_total_operator
+  address: Order_address_operator
   items__product: Order_items__product_operator
   items__price: Order_items__price_operator
   items__quantity: Order_items__quantity_operator
@@ -4864,6 +4867,17 @@ input Order_total_operator {
   greater_than: Float
   less_than_equal: Float
   less_than: Float
+}
+
+input Order_address_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
 }
 
 input Order_items__product_operator {
@@ -4942,6 +4956,7 @@ input Order_where_and {
   orderedBy: Order_orderedBy_operator
   stripePaymentIntentID: Order_stripePaymentIntentID_operator
   total: Order_total_operator
+  address: Order_address_operator
   items__product: Order_items__product_operator
   items__price: Order_items__price_operator
   items__quantity: Order_items__quantity_operator
@@ -4955,6 +4970,7 @@ input Order_where_or {
   orderedBy: Order_orderedBy_operator
   stripePaymentIntentID: Order_stripePaymentIntentID_operator
   total: Order_total_operator
+  address: Order_address_operator
   items__product: Order_items__product_operator
   items__price: Order_items__price_operator
   items__quantity: Order_items__quantity_operator
@@ -4976,6 +4992,7 @@ type OrdersDocAccessFields {
   orderedBy: OrdersDocAccessFields_orderedBy
   stripePaymentIntentID: OrdersDocAccessFields_stripePaymentIntentID
   total: OrdersDocAccessFields_total
+  address: OrdersDocAccessFields_address
   items: OrdersDocAccessFields_items
   updatedAt: OrdersDocAccessFields_updatedAt
   createdAt: OrdersDocAccessFields_createdAt
@@ -5047,6 +5064,29 @@ type OrdersDocAccessFields_total_Update {
 }
 
 type OrdersDocAccessFields_total_Delete {
+  permission: Boolean!
+}
+
+type OrdersDocAccessFields_address {
+  create: OrdersDocAccessFields_address_Create
+  read: OrdersDocAccessFields_address_Read
+  update: OrdersDocAccessFields_address_Update
+  delete: OrdersDocAccessFields_address_Delete
+}
+
+type OrdersDocAccessFields_address_Create {
+  permission: Boolean!
+}
+
+type OrdersDocAccessFields_address_Read {
+  permission: Boolean!
+}
+
+type OrdersDocAccessFields_address_Update {
+  permission: Boolean!
+}
+
+type OrdersDocAccessFields_address_Delete {
   permission: Boolean!
 }
 
@@ -6127,6 +6167,7 @@ type Users {
 
 input User_where {
   name: User_name_operator
+  phone: User_phone_operator
   roles: User_roles_operator
   purchases: User_purchases_operator
   stripeCustomerID: User_stripeCustomerID_operator
@@ -6143,6 +6184,17 @@ input User_where {
 }
 
 input User_name_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input User_phone_operator {
   equals: String
   not_equals: String
   like: String
@@ -6268,6 +6320,7 @@ input User_id_operator {
 
 input User_where_and {
   name: User_name_operator
+  phone: User_phone_operator
   roles: User_roles_operator
   purchases: User_purchases_operator
   stripeCustomerID: User_stripeCustomerID_operator
@@ -6283,6 +6336,7 @@ input User_where_and {
 
 input User_where_or {
   name: User_name_operator
+  phone: User_phone_operator
   roles: User_roles_operator
   purchases: User_purchases_operator
   stripeCustomerID: User_stripeCustomerID_operator
@@ -6307,6 +6361,7 @@ type usersDocAccess {
 
 type UsersDocAccessFields {
   name: UsersDocAccessFields_name
+  phone: UsersDocAccessFields_phone
   roles: UsersDocAccessFields_roles
   purchases: UsersDocAccessFields_purchases
   stripeCustomerID: UsersDocAccessFields_stripeCustomerID
@@ -6338,6 +6393,29 @@ type UsersDocAccessFields_name_Update {
 }
 
 type UsersDocAccessFields_name_Delete {
+  permission: Boolean!
+}
+
+type UsersDocAccessFields_phone {
+  create: UsersDocAccessFields_phone_Create
+  read: UsersDocAccessFields_phone_Read
+  update: UsersDocAccessFields_phone_Update
+  delete: UsersDocAccessFields_phone_Delete
+}
+
+type UsersDocAccessFields_phone_Create {
+  permission: Boolean!
+}
+
+type UsersDocAccessFields_phone_Read {
+  permission: Boolean!
+}
+
+type UsersDocAccessFields_phone_Update {
+  permission: Boolean!
+}
+
+type UsersDocAccessFields_phone_Delete {
   permission: Boolean!
 }
 
@@ -7319,8 +7397,646 @@ type PayloadPreferencesDeleteDocAccess {
 
 type Settings {
   productsPage: Page
+  promotionContent: String!
+  date: DateTime!
+  paner(where: Settings_Paner_where): Media!
+  loginImage(where: Settings_LoginImage_where): Media!
+  SignUpImage(where: Settings_SignUpImage_where): Media!
+  recoverPasswordImage(where: Settings_RecoverPasswordImage_where): Media!
   updatedAt: DateTime
   createdAt: DateTime
+}
+
+input Settings_Paner_where {
+  alt: Settings_Paner_alt_operator
+  caption: Settings_Paner_caption_operator
+  updatedAt: Settings_Paner_updatedAt_operator
+  createdAt: Settings_Paner_createdAt_operator
+  url: Settings_Paner_url_operator
+  filename: Settings_Paner_filename_operator
+  mimeType: Settings_Paner_mimeType_operator
+  filesize: Settings_Paner_filesize_operator
+  width: Settings_Paner_width_operator
+  height: Settings_Paner_height_operator
+  id: Settings_Paner_id_operator
+  AND: [Settings_Paner_where_and]
+  OR: [Settings_Paner_where_or]
+}
+
+input Settings_Paner_alt_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+}
+
+input Settings_Paner_caption_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
+}
+
+input Settings_Paner_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_Paner_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_Paner_url_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_Paner_filename_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_Paner_mimeType_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_Paner_filesize_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_Paner_width_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_Paner_height_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_Paner_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_Paner_where_and {
+  alt: Settings_Paner_alt_operator
+  caption: Settings_Paner_caption_operator
+  updatedAt: Settings_Paner_updatedAt_operator
+  createdAt: Settings_Paner_createdAt_operator
+  url: Settings_Paner_url_operator
+  filename: Settings_Paner_filename_operator
+  mimeType: Settings_Paner_mimeType_operator
+  filesize: Settings_Paner_filesize_operator
+  width: Settings_Paner_width_operator
+  height: Settings_Paner_height_operator
+  id: Settings_Paner_id_operator
+}
+
+input Settings_Paner_where_or {
+  alt: Settings_Paner_alt_operator
+  caption: Settings_Paner_caption_operator
+  updatedAt: Settings_Paner_updatedAt_operator
+  createdAt: Settings_Paner_createdAt_operator
+  url: Settings_Paner_url_operator
+  filename: Settings_Paner_filename_operator
+  mimeType: Settings_Paner_mimeType_operator
+  filesize: Settings_Paner_filesize_operator
+  width: Settings_Paner_width_operator
+  height: Settings_Paner_height_operator
+  id: Settings_Paner_id_operator
+}
+
+input Settings_LoginImage_where {
+  alt: Settings_LoginImage_alt_operator
+  caption: Settings_LoginImage_caption_operator
+  updatedAt: Settings_LoginImage_updatedAt_operator
+  createdAt: Settings_LoginImage_createdAt_operator
+  url: Settings_LoginImage_url_operator
+  filename: Settings_LoginImage_filename_operator
+  mimeType: Settings_LoginImage_mimeType_operator
+  filesize: Settings_LoginImage_filesize_operator
+  width: Settings_LoginImage_width_operator
+  height: Settings_LoginImage_height_operator
+  id: Settings_LoginImage_id_operator
+  AND: [Settings_LoginImage_where_and]
+  OR: [Settings_LoginImage_where_or]
+}
+
+input Settings_LoginImage_alt_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+}
+
+input Settings_LoginImage_caption_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
+}
+
+input Settings_LoginImage_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_LoginImage_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_LoginImage_url_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_LoginImage_filename_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_LoginImage_mimeType_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_LoginImage_filesize_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_LoginImage_width_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_LoginImage_height_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_LoginImage_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_LoginImage_where_and {
+  alt: Settings_LoginImage_alt_operator
+  caption: Settings_LoginImage_caption_operator
+  updatedAt: Settings_LoginImage_updatedAt_operator
+  createdAt: Settings_LoginImage_createdAt_operator
+  url: Settings_LoginImage_url_operator
+  filename: Settings_LoginImage_filename_operator
+  mimeType: Settings_LoginImage_mimeType_operator
+  filesize: Settings_LoginImage_filesize_operator
+  width: Settings_LoginImage_width_operator
+  height: Settings_LoginImage_height_operator
+  id: Settings_LoginImage_id_operator
+}
+
+input Settings_LoginImage_where_or {
+  alt: Settings_LoginImage_alt_operator
+  caption: Settings_LoginImage_caption_operator
+  updatedAt: Settings_LoginImage_updatedAt_operator
+  createdAt: Settings_LoginImage_createdAt_operator
+  url: Settings_LoginImage_url_operator
+  filename: Settings_LoginImage_filename_operator
+  mimeType: Settings_LoginImage_mimeType_operator
+  filesize: Settings_LoginImage_filesize_operator
+  width: Settings_LoginImage_width_operator
+  height: Settings_LoginImage_height_operator
+  id: Settings_LoginImage_id_operator
+}
+
+input Settings_SignUpImage_where {
+  alt: Settings_SignUpImage_alt_operator
+  caption: Settings_SignUpImage_caption_operator
+  updatedAt: Settings_SignUpImage_updatedAt_operator
+  createdAt: Settings_SignUpImage_createdAt_operator
+  url: Settings_SignUpImage_url_operator
+  filename: Settings_SignUpImage_filename_operator
+  mimeType: Settings_SignUpImage_mimeType_operator
+  filesize: Settings_SignUpImage_filesize_operator
+  width: Settings_SignUpImage_width_operator
+  height: Settings_SignUpImage_height_operator
+  id: Settings_SignUpImage_id_operator
+  AND: [Settings_SignUpImage_where_and]
+  OR: [Settings_SignUpImage_where_or]
+}
+
+input Settings_SignUpImage_alt_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+}
+
+input Settings_SignUpImage_caption_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
+}
+
+input Settings_SignUpImage_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_SignUpImage_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_SignUpImage_url_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_SignUpImage_filename_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_SignUpImage_mimeType_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_SignUpImage_filesize_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_SignUpImage_width_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_SignUpImage_height_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_SignUpImage_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_SignUpImage_where_and {
+  alt: Settings_SignUpImage_alt_operator
+  caption: Settings_SignUpImage_caption_operator
+  updatedAt: Settings_SignUpImage_updatedAt_operator
+  createdAt: Settings_SignUpImage_createdAt_operator
+  url: Settings_SignUpImage_url_operator
+  filename: Settings_SignUpImage_filename_operator
+  mimeType: Settings_SignUpImage_mimeType_operator
+  filesize: Settings_SignUpImage_filesize_operator
+  width: Settings_SignUpImage_width_operator
+  height: Settings_SignUpImage_height_operator
+  id: Settings_SignUpImage_id_operator
+}
+
+input Settings_SignUpImage_where_or {
+  alt: Settings_SignUpImage_alt_operator
+  caption: Settings_SignUpImage_caption_operator
+  updatedAt: Settings_SignUpImage_updatedAt_operator
+  createdAt: Settings_SignUpImage_createdAt_operator
+  url: Settings_SignUpImage_url_operator
+  filename: Settings_SignUpImage_filename_operator
+  mimeType: Settings_SignUpImage_mimeType_operator
+  filesize: Settings_SignUpImage_filesize_operator
+  width: Settings_SignUpImage_width_operator
+  height: Settings_SignUpImage_height_operator
+  id: Settings_SignUpImage_id_operator
+}
+
+input Settings_RecoverPasswordImage_where {
+  alt: Settings_RecoverPasswordImage_alt_operator
+  caption: Settings_RecoverPasswordImage_caption_operator
+  updatedAt: Settings_RecoverPasswordImage_updatedAt_operator
+  createdAt: Settings_RecoverPasswordImage_createdAt_operator
+  url: Settings_RecoverPasswordImage_url_operator
+  filename: Settings_RecoverPasswordImage_filename_operator
+  mimeType: Settings_RecoverPasswordImage_mimeType_operator
+  filesize: Settings_RecoverPasswordImage_filesize_operator
+  width: Settings_RecoverPasswordImage_width_operator
+  height: Settings_RecoverPasswordImage_height_operator
+  id: Settings_RecoverPasswordImage_id_operator
+  AND: [Settings_RecoverPasswordImage_where_and]
+  OR: [Settings_RecoverPasswordImage_where_or]
+}
+
+input Settings_RecoverPasswordImage_alt_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+}
+
+input Settings_RecoverPasswordImage_caption_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_url_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_filename_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_mimeType_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_filesize_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_width_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_height_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Settings_RecoverPasswordImage_where_and {
+  alt: Settings_RecoverPasswordImage_alt_operator
+  caption: Settings_RecoverPasswordImage_caption_operator
+  updatedAt: Settings_RecoverPasswordImage_updatedAt_operator
+  createdAt: Settings_RecoverPasswordImage_createdAt_operator
+  url: Settings_RecoverPasswordImage_url_operator
+  filename: Settings_RecoverPasswordImage_filename_operator
+  mimeType: Settings_RecoverPasswordImage_mimeType_operator
+  filesize: Settings_RecoverPasswordImage_filesize_operator
+  width: Settings_RecoverPasswordImage_width_operator
+  height: Settings_RecoverPasswordImage_height_operator
+  id: Settings_RecoverPasswordImage_id_operator
+}
+
+input Settings_RecoverPasswordImage_where_or {
+  alt: Settings_RecoverPasswordImage_alt_operator
+  caption: Settings_RecoverPasswordImage_caption_operator
+  updatedAt: Settings_RecoverPasswordImage_updatedAt_operator
+  createdAt: Settings_RecoverPasswordImage_createdAt_operator
+  url: Settings_RecoverPasswordImage_url_operator
+  filename: Settings_RecoverPasswordImage_filename_operator
+  mimeType: Settings_RecoverPasswordImage_mimeType_operator
+  filesize: Settings_RecoverPasswordImage_filesize_operator
+  width: Settings_RecoverPasswordImage_width_operator
+  height: Settings_RecoverPasswordImage_height_operator
+  id: Settings_RecoverPasswordImage_id_operator
 }
 
 type settingsDocAccess {
@@ -7331,6 +8047,12 @@ type settingsDocAccess {
 
 type SettingsDocAccessFields {
   productsPage: SettingsDocAccessFields_productsPage
+  promotionContent: SettingsDocAccessFields_promotionContent
+  date: SettingsDocAccessFields_date
+  paner: SettingsDocAccessFields_paner
+  loginImage: SettingsDocAccessFields_loginImage
+  SignUpImage: SettingsDocAccessFields_SignUpImage
+  recoverPasswordImage: SettingsDocAccessFields_recoverPasswordImage
   updatedAt: SettingsDocAccessFields_updatedAt
   createdAt: SettingsDocAccessFields_createdAt
 }
@@ -7355,6 +8077,144 @@ type SettingsDocAccessFields_productsPage_Update {
 }
 
 type SettingsDocAccessFields_productsPage_Delete {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_promotionContent {
+  create: SettingsDocAccessFields_promotionContent_Create
+  read: SettingsDocAccessFields_promotionContent_Read
+  update: SettingsDocAccessFields_promotionContent_Update
+  delete: SettingsDocAccessFields_promotionContent_Delete
+}
+
+type SettingsDocAccessFields_promotionContent_Create {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_promotionContent_Read {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_promotionContent_Update {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_promotionContent_Delete {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_date {
+  create: SettingsDocAccessFields_date_Create
+  read: SettingsDocAccessFields_date_Read
+  update: SettingsDocAccessFields_date_Update
+  delete: SettingsDocAccessFields_date_Delete
+}
+
+type SettingsDocAccessFields_date_Create {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_date_Read {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_date_Update {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_date_Delete {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_paner {
+  create: SettingsDocAccessFields_paner_Create
+  read: SettingsDocAccessFields_paner_Read
+  update: SettingsDocAccessFields_paner_Update
+  delete: SettingsDocAccessFields_paner_Delete
+}
+
+type SettingsDocAccessFields_paner_Create {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_paner_Read {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_paner_Update {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_paner_Delete {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_loginImage {
+  create: SettingsDocAccessFields_loginImage_Create
+  read: SettingsDocAccessFields_loginImage_Read
+  update: SettingsDocAccessFields_loginImage_Update
+  delete: SettingsDocAccessFields_loginImage_Delete
+}
+
+type SettingsDocAccessFields_loginImage_Create {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_loginImage_Read {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_loginImage_Update {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_loginImage_Delete {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_SignUpImage {
+  create: SettingsDocAccessFields_SignUpImage_Create
+  read: SettingsDocAccessFields_SignUpImage_Read
+  update: SettingsDocAccessFields_SignUpImage_Update
+  delete: SettingsDocAccessFields_SignUpImage_Delete
+}
+
+type SettingsDocAccessFields_SignUpImage_Create {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_SignUpImage_Read {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_SignUpImage_Update {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_SignUpImage_Delete {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_recoverPasswordImage {
+  create: SettingsDocAccessFields_recoverPasswordImage_Create
+  read: SettingsDocAccessFields_recoverPasswordImage_Read
+  update: SettingsDocAccessFields_recoverPasswordImage_Update
+  delete: SettingsDocAccessFields_recoverPasswordImage_Delete
+}
+
+type SettingsDocAccessFields_recoverPasswordImage_Create {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_recoverPasswordImage_Read {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_recoverPasswordImage_Update {
+  permission: Boolean!
+}
+
+type SettingsDocAccessFields_recoverPasswordImage_Delete {
   permission: Boolean!
 }
 
@@ -8085,6 +8945,7 @@ type HeaderUpdateDocAccess {
 type Footer {
   copyright: String!
   logo(where: Footer_Logo_where): Media!
+  footerNavItems: [Footer_FooterNavItems!]
   navItems: [Footer_NavItems!]
   updatedAt: DateTime
   createdAt: DateTime
@@ -8246,6 +9107,171 @@ input Footer_Logo_where_or {
   width: Footer_Logo_width_operator
   height: Footer_Logo_height_operator
   id: Footer_Logo_id_operator
+}
+
+type Footer_FooterNavItems {
+  title: String
+  description: String
+  logo(where: Footer_FooterNavItems_Logo_where): Media
+  id: String
+}
+
+input Footer_FooterNavItems_Logo_where {
+  alt: Footer_FooterNavItems_Logo_alt_operator
+  caption: Footer_FooterNavItems_Logo_caption_operator
+  updatedAt: Footer_FooterNavItems_Logo_updatedAt_operator
+  createdAt: Footer_FooterNavItems_Logo_createdAt_operator
+  url: Footer_FooterNavItems_Logo_url_operator
+  filename: Footer_FooterNavItems_Logo_filename_operator
+  mimeType: Footer_FooterNavItems_Logo_mimeType_operator
+  filesize: Footer_FooterNavItems_Logo_filesize_operator
+  width: Footer_FooterNavItems_Logo_width_operator
+  height: Footer_FooterNavItems_Logo_height_operator
+  id: Footer_FooterNavItems_Logo_id_operator
+  AND: [Footer_FooterNavItems_Logo_where_and]
+  OR: [Footer_FooterNavItems_Logo_where_or]
+}
+
+input Footer_FooterNavItems_Logo_alt_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+}
+
+input Footer_FooterNavItems_Logo_caption_operator {
+  equals: JSON
+  not_equals: JSON
+  like: JSON
+  contains: JSON
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_url_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_filename_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_mimeType_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_filesize_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_width_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_height_operator {
+  equals: Float
+  not_equals: Float
+  greater_than_equal: Float
+  greater_than: Float
+  less_than_equal: Float
+  less_than: Float
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Footer_FooterNavItems_Logo_where_and {
+  alt: Footer_FooterNavItems_Logo_alt_operator
+  caption: Footer_FooterNavItems_Logo_caption_operator
+  updatedAt: Footer_FooterNavItems_Logo_updatedAt_operator
+  createdAt: Footer_FooterNavItems_Logo_createdAt_operator
+  url: Footer_FooterNavItems_Logo_url_operator
+  filename: Footer_FooterNavItems_Logo_filename_operator
+  mimeType: Footer_FooterNavItems_Logo_mimeType_operator
+  filesize: Footer_FooterNavItems_Logo_filesize_operator
+  width: Footer_FooterNavItems_Logo_width_operator
+  height: Footer_FooterNavItems_Logo_height_operator
+  id: Footer_FooterNavItems_Logo_id_operator
+}
+
+input Footer_FooterNavItems_Logo_where_or {
+  alt: Footer_FooterNavItems_Logo_alt_operator
+  caption: Footer_FooterNavItems_Logo_caption_operator
+  updatedAt: Footer_FooterNavItems_Logo_updatedAt_operator
+  createdAt: Footer_FooterNavItems_Logo_createdAt_operator
+  url: Footer_FooterNavItems_Logo_url_operator
+  filename: Footer_FooterNavItems_Logo_filename_operator
+  mimeType: Footer_FooterNavItems_Logo_mimeType_operator
+  filesize: Footer_FooterNavItems_Logo_filesize_operator
+  width: Footer_FooterNavItems_Logo_width_operator
+  height: Footer_FooterNavItems_Logo_height_operator
+  id: Footer_FooterNavItems_Logo_id_operator
 }
 
 type Footer_NavItems {
@@ -8445,6 +9471,7 @@ type footerDocAccess {
 type FooterDocAccessFields {
   copyright: FooterDocAccessFields_copyright
   logo: FooterDocAccessFields_logo
+  footerNavItems: FooterDocAccessFields_footerNavItems
   navItems: FooterDocAccessFields_navItems
   updatedAt: FooterDocAccessFields_updatedAt
   createdAt: FooterDocAccessFields_createdAt
@@ -8493,6 +9520,129 @@ type FooterDocAccessFields_logo_Update {
 }
 
 type FooterDocAccessFields_logo_Delete {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems {
+  create: FooterDocAccessFields_footerNavItems_Create
+  read: FooterDocAccessFields_footerNavItems_Read
+  update: FooterDocAccessFields_footerNavItems_Update
+  delete: FooterDocAccessFields_footerNavItems_Delete
+  fields: FooterDocAccessFields_footerNavItems_Fields
+}
+
+type FooterDocAccessFields_footerNavItems_Create {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_Read {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_Update {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_Delete {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_Fields {
+  title: FooterDocAccessFields_footerNavItems_title
+  description: FooterDocAccessFields_footerNavItems_description
+  logo: FooterDocAccessFields_footerNavItems_logo
+  id: FooterDocAccessFields_footerNavItems_id
+}
+
+type FooterDocAccessFields_footerNavItems_title {
+  create: FooterDocAccessFields_footerNavItems_title_Create
+  read: FooterDocAccessFields_footerNavItems_title_Read
+  update: FooterDocAccessFields_footerNavItems_title_Update
+  delete: FooterDocAccessFields_footerNavItems_title_Delete
+}
+
+type FooterDocAccessFields_footerNavItems_title_Create {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_title_Read {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_title_Update {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_title_Delete {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_description {
+  create: FooterDocAccessFields_footerNavItems_description_Create
+  read: FooterDocAccessFields_footerNavItems_description_Read
+  update: FooterDocAccessFields_footerNavItems_description_Update
+  delete: FooterDocAccessFields_footerNavItems_description_Delete
+}
+
+type FooterDocAccessFields_footerNavItems_description_Create {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_description_Read {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_description_Update {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_description_Delete {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_logo {
+  create: FooterDocAccessFields_footerNavItems_logo_Create
+  read: FooterDocAccessFields_footerNavItems_logo_Read
+  update: FooterDocAccessFields_footerNavItems_logo_Update
+  delete: FooterDocAccessFields_footerNavItems_logo_Delete
+}
+
+type FooterDocAccessFields_footerNavItems_logo_Create {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_logo_Read {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_logo_Update {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_logo_Delete {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_id {
+  create: FooterDocAccessFields_footerNavItems_id_Create
+  read: FooterDocAccessFields_footerNavItems_id_Read
+  update: FooterDocAccessFields_footerNavItems_id_Update
+  delete: FooterDocAccessFields_footerNavItems_id_Delete
+}
+
+type FooterDocAccessFields_footerNavItems_id_Create {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_id_Read {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_id_Update {
+  permission: Boolean!
+}
+
+type FooterDocAccessFields_footerNavItems_id_Delete {
   permission: Boolean!
 }
 
@@ -10024,6 +11174,7 @@ type OrdersFields {
   orderedBy: OrdersFields_orderedBy
   stripePaymentIntentID: OrdersFields_stripePaymentIntentID
   total: OrdersFields_total
+  address: OrdersFields_address
   items: OrdersFields_items
   updatedAt: OrdersFields_updatedAt
   createdAt: OrdersFields_createdAt
@@ -10095,6 +11246,29 @@ type OrdersFields_total_Update {
 }
 
 type OrdersFields_total_Delete {
+  permission: Boolean!
+}
+
+type OrdersFields_address {
+  create: OrdersFields_address_Create
+  read: OrdersFields_address_Read
+  update: OrdersFields_address_Update
+  delete: OrdersFields_address_Delete
+}
+
+type OrdersFields_address_Create {
+  permission: Boolean!
+}
+
+type OrdersFields_address_Read {
+  permission: Boolean!
+}
+
+type OrdersFields_address_Update {
+  permission: Boolean!
+}
+
+type OrdersFields_address_Delete {
   permission: Boolean!
 }
 
@@ -10844,6 +12018,7 @@ type usersAccess {
 
 type UsersFields {
   name: UsersFields_name
+  phone: UsersFields_phone
   roles: UsersFields_roles
   purchases: UsersFields_purchases
   stripeCustomerID: UsersFields_stripeCustomerID
@@ -10875,6 +12050,29 @@ type UsersFields_name_Update {
 }
 
 type UsersFields_name_Delete {
+  permission: Boolean!
+}
+
+type UsersFields_phone {
+  create: UsersFields_phone_Create
+  read: UsersFields_phone_Read
+  update: UsersFields_phone_Update
+  delete: UsersFields_phone_Delete
+}
+
+type UsersFields_phone_Create {
+  permission: Boolean!
+}
+
+type UsersFields_phone_Read {
+  permission: Boolean!
+}
+
+type UsersFields_phone_Update {
+  permission: Boolean!
+}
+
+type UsersFields_phone_Delete {
   permission: Boolean!
 }
 
@@ -11576,6 +12774,12 @@ type settingsAccess {
 
 type SettingsFields {
   productsPage: SettingsFields_productsPage
+  promotionContent: SettingsFields_promotionContent
+  date: SettingsFields_date
+  paner: SettingsFields_paner
+  loginImage: SettingsFields_loginImage
+  SignUpImage: SettingsFields_SignUpImage
+  recoverPasswordImage: SettingsFields_recoverPasswordImage
   updatedAt: SettingsFields_updatedAt
   createdAt: SettingsFields_createdAt
 }
@@ -11600,6 +12804,144 @@ type SettingsFields_productsPage_Update {
 }
 
 type SettingsFields_productsPage_Delete {
+  permission: Boolean!
+}
+
+type SettingsFields_promotionContent {
+  create: SettingsFields_promotionContent_Create
+  read: SettingsFields_promotionContent_Read
+  update: SettingsFields_promotionContent_Update
+  delete: SettingsFields_promotionContent_Delete
+}
+
+type SettingsFields_promotionContent_Create {
+  permission: Boolean!
+}
+
+type SettingsFields_promotionContent_Read {
+  permission: Boolean!
+}
+
+type SettingsFields_promotionContent_Update {
+  permission: Boolean!
+}
+
+type SettingsFields_promotionContent_Delete {
+  permission: Boolean!
+}
+
+type SettingsFields_date {
+  create: SettingsFields_date_Create
+  read: SettingsFields_date_Read
+  update: SettingsFields_date_Update
+  delete: SettingsFields_date_Delete
+}
+
+type SettingsFields_date_Create {
+  permission: Boolean!
+}
+
+type SettingsFields_date_Read {
+  permission: Boolean!
+}
+
+type SettingsFields_date_Update {
+  permission: Boolean!
+}
+
+type SettingsFields_date_Delete {
+  permission: Boolean!
+}
+
+type SettingsFields_paner {
+  create: SettingsFields_paner_Create
+  read: SettingsFields_paner_Read
+  update: SettingsFields_paner_Update
+  delete: SettingsFields_paner_Delete
+}
+
+type SettingsFields_paner_Create {
+  permission: Boolean!
+}
+
+type SettingsFields_paner_Read {
+  permission: Boolean!
+}
+
+type SettingsFields_paner_Update {
+  permission: Boolean!
+}
+
+type SettingsFields_paner_Delete {
+  permission: Boolean!
+}
+
+type SettingsFields_loginImage {
+  create: SettingsFields_loginImage_Create
+  read: SettingsFields_loginImage_Read
+  update: SettingsFields_loginImage_Update
+  delete: SettingsFields_loginImage_Delete
+}
+
+type SettingsFields_loginImage_Create {
+  permission: Boolean!
+}
+
+type SettingsFields_loginImage_Read {
+  permission: Boolean!
+}
+
+type SettingsFields_loginImage_Update {
+  permission: Boolean!
+}
+
+type SettingsFields_loginImage_Delete {
+  permission: Boolean!
+}
+
+type SettingsFields_SignUpImage {
+  create: SettingsFields_SignUpImage_Create
+  read: SettingsFields_SignUpImage_Read
+  update: SettingsFields_SignUpImage_Update
+  delete: SettingsFields_SignUpImage_Delete
+}
+
+type SettingsFields_SignUpImage_Create {
+  permission: Boolean!
+}
+
+type SettingsFields_SignUpImage_Read {
+  permission: Boolean!
+}
+
+type SettingsFields_SignUpImage_Update {
+  permission: Boolean!
+}
+
+type SettingsFields_SignUpImage_Delete {
+  permission: Boolean!
+}
+
+type SettingsFields_recoverPasswordImage {
+  create: SettingsFields_recoverPasswordImage_Create
+  read: SettingsFields_recoverPasswordImage_Read
+  update: SettingsFields_recoverPasswordImage_Update
+  delete: SettingsFields_recoverPasswordImage_Delete
+}
+
+type SettingsFields_recoverPasswordImage_Create {
+  permission: Boolean!
+}
+
+type SettingsFields_recoverPasswordImage_Read {
+  permission: Boolean!
+}
+
+type SettingsFields_recoverPasswordImage_Update {
+  permission: Boolean!
+}
+
+type SettingsFields_recoverPasswordImage_Delete {
   permission: Boolean!
 }
 
@@ -11983,6 +13325,7 @@ type footerAccess {
 type FooterFields {
   copyright: FooterFields_copyright
   logo: FooterFields_logo
+  footerNavItems: FooterFields_footerNavItems
   navItems: FooterFields_navItems
   updatedAt: FooterFields_updatedAt
   createdAt: FooterFields_createdAt
@@ -12031,6 +13374,129 @@ type FooterFields_logo_Update {
 }
 
 type FooterFields_logo_Delete {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems {
+  create: FooterFields_footerNavItems_Create
+  read: FooterFields_footerNavItems_Read
+  update: FooterFields_footerNavItems_Update
+  delete: FooterFields_footerNavItems_Delete
+  fields: FooterFields_footerNavItems_Fields
+}
+
+type FooterFields_footerNavItems_Create {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_Read {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_Update {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_Delete {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_Fields {
+  title: FooterFields_footerNavItems_title
+  description: FooterFields_footerNavItems_description
+  logo: FooterFields_footerNavItems_logo
+  id: FooterFields_footerNavItems_id
+}
+
+type FooterFields_footerNavItems_title {
+  create: FooterFields_footerNavItems_title_Create
+  read: FooterFields_footerNavItems_title_Read
+  update: FooterFields_footerNavItems_title_Update
+  delete: FooterFields_footerNavItems_title_Delete
+}
+
+type FooterFields_footerNavItems_title_Create {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_title_Read {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_title_Update {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_title_Delete {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_description {
+  create: FooterFields_footerNavItems_description_Create
+  read: FooterFields_footerNavItems_description_Read
+  update: FooterFields_footerNavItems_description_Update
+  delete: FooterFields_footerNavItems_description_Delete
+}
+
+type FooterFields_footerNavItems_description_Create {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_description_Read {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_description_Update {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_description_Delete {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_logo {
+  create: FooterFields_footerNavItems_logo_Create
+  read: FooterFields_footerNavItems_logo_Read
+  update: FooterFields_footerNavItems_logo_Update
+  delete: FooterFields_footerNavItems_logo_Delete
+}
+
+type FooterFields_footerNavItems_logo_Create {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_logo_Read {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_logo_Update {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_logo_Delete {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_id {
+  create: FooterFields_footerNavItems_id_Create
+  read: FooterFields_footerNavItems_id_Read
+  update: FooterFields_footerNavItems_id_Update
+  delete: FooterFields_footerNavItems_id_Delete
+}
+
+type FooterFields_footerNavItems_id_Create {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_id_Read {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_id_Update {
+  permission: Boolean!
+}
+
+type FooterFields_footerNavItems_id_Delete {
   permission: Boolean!
 }
 
@@ -12550,6 +14016,7 @@ input mutationOrderInput {
   orderedBy: String
   stripePaymentIntentID: String
   total: Float!
+  address: String
   items: [mutationOrder_ItemsInput]
   updatedAt: String
   createdAt: String
@@ -12566,6 +14033,7 @@ input mutationOrderUpdateInput {
   orderedBy: String
   stripePaymentIntentID: String
   total: Float
+  address: String
   items: [mutationOrderUpdate_ItemsInput]
   updatedAt: String
   createdAt: String
@@ -12638,6 +14106,7 @@ input mutationCategoryUpdate_BreadcrumbsInput {
 
 input mutationUserInput {
   name: String
+  phone: String
   roles: [User_roles_MutationInput]
   purchases: [String]
   stripeCustomerID: String
@@ -12672,6 +14141,7 @@ input mutationUser_Cart_ItemsInput {
 
 input mutationUserUpdateInput {
   name: String
+  phone: String
   roles: [UserUpdate_roles_MutationInput]
   purchases: [String]
   stripeCustomerID: String
@@ -12808,6 +14278,12 @@ enum PayloadPreferenceUpdate_UserRelationshipInputRelationTo {
 
 input mutationSettingsInput {
   productsPage: String
+  promotionContent: String!
+  date: String!
+  paner: String!
+  loginImage: String!
+  SignUpImage: String!
+  recoverPasswordImage: String!
   updatedAt: String
   createdAt: String
 }
@@ -12845,9 +14321,17 @@ enum Header_NavItems_Link_ReferenceRelationshipInputRelationTo {
 input mutationFooterInput {
   copyright: String!
   logo: String!
+  footerNavItems: [mutationFooter_FooterNavItemsInput]
   navItems: [mutationFooter_NavItemsInput]
   updatedAt: String
   createdAt: String
+}
+
+input mutationFooter_FooterNavItemsInput {
+  title: String!
+  description: String!
+  logo: String!
+  id: String
 }
 
 input mutationFooter_NavItemsInput {

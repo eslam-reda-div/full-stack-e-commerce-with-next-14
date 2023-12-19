@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { Header, Media } from '../../../payload/payload-types'
+import { fetchGlobals, fetchHeader } from '../../_api/fetchGlobals'
 import { Gutter } from '../../_components/Gutter'
 import { RenderParams } from '../../_components/RenderParams'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
@@ -11,12 +13,33 @@ import { RecoverPasswordForm } from './RecoverPasswordForm'
 import classes from './index.module.scss'
 
 export default async function RecoverPassword() {
+  let globals: any | null = null
+  let paner = null
+  let header: Header | null = null
+  let logo: Media | null = null
+
+  try {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    globals = await fetchGlobals()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    paner = globals.settings.recoverPasswordImage.url
+    // setAd(paner)
+    header = await fetchHeader()
+
+    logo = header?.logo as Media
+  } catch (error) {
+    console.error(error)
+  }
+
   return (
-    <section className={classes.recoverPassword}>
-      <div className={classes.heroImg}>
+    <section
+      className={classes.recoverPassword}
+      style={{ '--mytest-image': `url(${paner})` } as CSSProperties}
+    >
+      <div className={classes.heroImg} style={{ backgroundImage: `url(${paner})` }}>
         <Link href="/">
           <Image
-            src="/logo-black.svg"
+            src={logo?.url || '/logo-black.svg'}
             width={250}
             height={23}
             alt={'logo'}

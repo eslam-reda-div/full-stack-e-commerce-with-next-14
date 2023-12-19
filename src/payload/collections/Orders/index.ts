@@ -51,6 +51,11 @@ export const Orders: CollectionConfig = {
       min: 0,
     },
     {
+      name: 'address',
+      type: 'text',
+      // required: true,
+    },
+    {
       name: 'items',
       type: 'array',
       fields: [
