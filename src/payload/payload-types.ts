@@ -393,7 +393,7 @@ export interface Order {
   orderedBy?: string | User;
   stripePaymentIntentID?: string;
   total: number;
-  address?: string;
+  address: string;
   items?: {
     product: string | Product;
     price?: number;

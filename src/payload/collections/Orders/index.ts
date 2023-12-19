@@ -53,7 +53,7 @@ export const Orders: CollectionConfig = {
     {
       name: 'address',
       type: 'text',
-      // required: true,
+      required: true,
     },
     {
       name: 'items',

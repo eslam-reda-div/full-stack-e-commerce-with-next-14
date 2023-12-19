@@ -4756,7 +4756,7 @@ type Order {
   orderedBy: User
   stripePaymentIntentID: String
   total: Float!
-  address: String
+  address: String!
   items: [Order_Items!]
   updatedAt: DateTime
   createdAt: DateTime
@@ -4877,7 +4877,6 @@ input Order_address_operator {
   in: [String]
   not_in: [String]
   all: [String]
-  exists: Boolean
 }
 
 input Order_items__product_operator {
@@ -14016,7 +14015,7 @@ input mutationOrderInput {
   orderedBy: String
   stripePaymentIntentID: String
   total: Float!
-  address: String
+  address: String!
   items: [mutationOrder_ItemsInput]
   updatedAt: String
   createdAt: String

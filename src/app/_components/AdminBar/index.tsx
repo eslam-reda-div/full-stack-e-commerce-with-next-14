@@ -16,7 +16,7 @@ export const AdminBar: React.FC<{
 }> = props => {
   const { adminBarProps } = props || {}
   const segments = useSelectedLayoutSegments()
-  const collection = segments?.[1] === 'products' ? 'products' : 'pages'
+  const collection = segments?.[1] === 'products' ? 'products' : ''
   const [show, setShow] = React.useState(false)
 
   const { user } = useAuth()
@@ -38,8 +38,8 @@ export const AdminBar: React.FC<{
           {...adminBarProps}
           collection={collection}
           collectionLabels={{
-            singular: collection === 'products' ? 'Product' : 'Page',
-            plural: collection === 'products' ? 'Products' : 'Pages',
+            singular: collection === 'products' ? 'Product' : '',
+            plural: collection === 'products' ? 'Products' : '',
           }}
           key={user?.id} // use key to get the admin bar to re-run its `me` request
           cmsURL={process.env.NEXT_PUBLIC_SERVER_URL}
