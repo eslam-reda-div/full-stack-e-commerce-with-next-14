@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { Page, Settings } from '../../../payload/payload-types'
-import { staticCart } from '../../../payload/seed/cart-static'
+// import { staticCart } from '../../../payload/seed/cart-static'
 import { fetchDoc } from '../../_api/fetchDoc'
 import { fetchSettings } from '../../_api/fetchGlobals'
 import { Blocks } from '../../_components/Blocks'
@@ -38,7 +38,7 @@ export default async function Cart() {
   // you should delete this code once you have a cart page in the CMS
   // this is really only useful for those who are demoing this template
   if (!page) {
-    page = staticCart
+    // page = staticCart
   }
 
   if (!page) {
@@ -83,7 +83,7 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 
   if (!page) {
-    page = staticCart
+    // page = staticCart
   }
 
   return generateMeta({ doc: page })

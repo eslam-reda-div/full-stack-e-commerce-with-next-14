@@ -4,7 +4,7 @@ import { draftMode } from 'next/headers'
 import { notFound } from 'next/navigation'
 
 import type { Category, Page } from '../../../payload/payload-types'
-import { staticHome } from '../../../payload/seed/home-static'
+// import { staticHome } from '../../../payload/seed/home-static'
 import { fetchDoc } from '../../_api/fetchDoc'
 import { fetchDocs } from '../../_api/fetchDocs'
 import { Blocks } from '../../_components/Blocks'
@@ -49,7 +49,7 @@ export default async function Page({ params: { slug = 'home' } }) {
   // you should delete this code once you have a home page in the CMS
   // this is really only useful for those who are demoing this template
   if (!page && slug === 'home') {
-    page = staticHome
+    // page = staticHome
   }
 
   if (!page) {
@@ -62,7 +62,6 @@ export default async function Page({ params: { slug = 'home' } }) {
     <React.Fragment>
       {slug === 'home' ? (
         <section>
-          
           <Hero {...hero} />
           <Gutter className={classes.home}>
             <Categories categories={categories} />
@@ -111,7 +110,7 @@ export async function generateMetadata({ params: { slug = 'home' } }): Promise<M
   }
 
   if (!page && slug === 'home') {
-    page = staticHome
+    // page = staticHome
   }
 
   return generateMeta({ doc: page })
