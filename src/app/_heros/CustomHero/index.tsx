@@ -31,7 +31,6 @@ export const CustomHero: React.FC<Page['hero']> = ({ richText, media, links }) =
             </ul>
           )}
         </div>
-
       </div>
     </section>
   )
