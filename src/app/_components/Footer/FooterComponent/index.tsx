@@ -24,7 +24,7 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
           {footerNavItems.map((inclusion, index) => {
             const Icon = inclusion?.logo as Media
             return (
-              <li key={inclusion.title}>
+              <li key={inclusion.title} className={classes.keys}>
                 <Image
                   src={Icon?.url}
                   alt={inclusion.title}
