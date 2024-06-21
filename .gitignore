@@ -2,7 +2,7 @@
 # dist
 # /media
 node_modules
-.DS_Store
+# .DS_Store
 .env
-.next
+# .next
 .vercel
